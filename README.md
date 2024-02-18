@@ -77,4 +77,4 @@ This command builds the images if they don't exist and starts the containers. Th
 Once the containers are up and running, you can access the application as follows:
 
 - **Frontend**: Open your browser and navigate to `http://localhost:3000` to view the UI.
-- **Backend/API**: The backend API is accessible at `http://localhost:3001`. You can use tools like Postman or cURL to interact with the API endpoints.
+- **Backend/API**: The backend API is accessible at `http://localhost:3001`
