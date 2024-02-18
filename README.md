@@ -15,7 +15,6 @@ This project is built using a modern web development stack that includes a React
 
 - **Technology:** Node.js with Express framework
 - **Database:** MongoDB
-- **Architecture:** RESTful API
 - **Package Manager:** Yarn
 - **Development Features:** Nodemon for automatic restarting of the server during development.
 - **Deployment:** Dockerized to match the frontend environment and ensure seamless integration.
@@ -41,3 +40,41 @@ This project is built using a modern web development stack that includes a React
 ## CI/CD
 
 - **GitHub Actions:** Utilized for continuous integration and deployment, automating the testing and deployment process to production environments.
+
+
+## Usage
+
+Here's how to get started with this project:
+
+### Prerequisites
+
+Before you begin, make sure you have the following installed on your system:
+
+- Git
+- Docker
+- Docker Compose
+- Node.js (for running local commands and scripts)
+
+### Cloning the Repository
+
+First, clone the repository to your local machine using Git:
+
+```bash
+git clone git@github.com:ksullivan91/tech-stack.git
+cd tech-stack
+```
+
+### Running the Application with Docker
+To start the application, use Docker Compose. This will build and start all the necessary containers defined in your docker-compose.yml file:
+
+```bash
+docker-compose up --build
+```
+This command builds the images if they don't exist and starts the containers. The --build option ensures that Docker rebuilds the images, which is useful if you've made changes to the Dockerfiles or your dependencies.
+
+### Accessing the Application
+
+Once the containers are up and running, you can access the application as follows:
+
+- **Frontend**: Open your browser and navigate to `http://localhost:3000` to view the UI.
+- **Backend/API**: The backend API is accessible at `http://localhost:3001`. You can use tools like Postman or cURL to interact with the API endpoints.
