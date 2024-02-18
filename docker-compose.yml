@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  ui:
+    build: ./ui
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./ui/src:/app/src:cached
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WDS_SOCKET_HOST=127.0.0.1
+      - WATCHPACK_POLLING=true
+  endpoint:
+    build: ./endpoint
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./endpoint/src:/app/src
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WDS_SOCKET_HOST=127.0.0.1
+      - WATCHPACK_POLLING=true
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
