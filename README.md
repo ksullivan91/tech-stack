@@ -1,5 +1,3 @@
-# Project Stack Description
-
 ## Overview
 
 This project is built using a modern web development stack that includes a React frontend, a Node.js Express backend, MongoDB for persistence, Docker for containerization and environment consistency, and Yarn for package management. This setup is designed to offer a scalable, efficient, and developer-friendly workflow for full-stack web development.
