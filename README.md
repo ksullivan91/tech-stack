@@ -46,15 +46,6 @@ This project is built using a modern web development stack that includes a React
 
 Here's how to get started with this project:
 
-### Prerequisites
-
-Before you begin, make sure you have the following installed on your system:
-
-- Git
-- Docker
-- Docker Compose
-- Node.js (for running local commands and scripts)
-
 ### Cloning the Repository
 
 First, clone the repository to your local machine using Git:
